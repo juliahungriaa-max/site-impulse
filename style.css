@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f9ff;
+    color: #17172b;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+header {
+    width: 100%;
+    padding: 20px 8%;
+    background: white;
+    border-bottom: 1px solid #eeeeff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav button {
+   background: #6c4cff;
+   border: none;
+   padding: 10px 18px;
+   border-radius: 8px;
+   color: white;
+   font-size: 14px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: 0.3s;
+    
+}
+
+nav button:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   PÁGINA PRINCIPAL
+========================= */
+
+main {
+    min-height: calc(100vh - 80px);
+    padding: 80px 20px;
+}
+
+main section {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+main button {
+    margin-top: 20px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #6c4cff,
+        #2563eb
+    );
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(108, 76, 255, 0.25);
+
+    transition: 0.3s;
+}
+
+main button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(108, 76, 255, 0.35);
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid rgba(108, 76, 255, 0.45);
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   PÁGINA PROBLEMAS
+========================= */
+
+.pagina-problemas {
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(108, 76, 255, 0.12),
+            transparent 35%
+        ),
+        #f8f9ff;
+}
+
+.intro-problemas {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.intro-problemas h1 {
+    max-width: 850px;
+    margin: 0 auto 25px;
+}
+
+.intro-problemas p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   DESAFIOS
+========================= */
+
+.desafios {
+    max-width: 1100px !important;
+    padding: 60px 20px;
+}
+
+.desafios h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.cards-problemas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card-problema {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+
+    text-align: left;
+
+    border: 1px solid #eeeeff;
+
+    box-shadow: 0 10px 30px rgba(23, 23, 43, 0.06);
+
+    transition: 0.3s;
+}
+
+.card-problema:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(108, 76, 255, 0.12);
+}
+
+.card-problema h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #17172b;
+}
+
+.card-problema p {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+/* =========================
+   SOLUÇÃO
+========================= */
+
+.solucao {
+    padding: 90px 20px;
+}
+
+.solucao h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.solucao p {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   COMO FUNCIONA
+========================= */
+
+.introducao {
+    margin-bottom: 50px;
+}
+
+.introducao p {
+    line-height: 1.6;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    color: #6c4cff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.2;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   ETAPAS
+========================= */
+
+.etapas {
+    list-style-type: none;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.etapas li {
+    background-color: white;
+    border-radius: 16px;
+    padding: 25px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    text-align: left;
+}
+
+.etapas h3 {
+    color: #6c4cff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.etapas p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FRASE FINAL
+========================= */
+
+.frase-final {
+    font-size: 25px;
+    color: #6c4cff;
+}
+
+
+/* =========================
+   BOTÃO FINAL
+========================= */
+
+.botao-final {
+    background-color: #6c4cff;
+    color: white;
+
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+.botao-final:hover {
+    background-color: #6c4cff;
+}
+
+
+/* =========================
+   PÁGINA SERVIÇO
+========================= */
+
+.introducao-servico {
+    margin-bottom: 50px;
+}
+
+.titulo-servico {
+    color: #6c4cff;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.introducao-servico p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.servicos {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-servico {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    text-align: left;
+}
+
+.card-servico h3 {
+    color: #6c4cff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-servico p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CHAMADA SERVIÇO
+========================= */
+
+.chamada-servico {
+    margin-top: 40px;
+}
+
+
+/* =========================
+   PÁGINA SOBRE
+========================= */
+
+.sobre-introducao {
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.titulo-sobre {
+    color: #6c4cff;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.sobre-introducao p {
+    max-width: 700px;
+    margin: 0 auto 18px;
+    line-height: 1.7;
+}
+
+.missao {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 35px;
+
+    background: white;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.missao h2 {
+    color: #6c4cff !important;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.missao p {
+    margin: 0;
+}
+
+/* =========================
+   PÁGINA CONTATO
+========================= */
+
+.contato-introducao {
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.titulo-contato {
+    color: #6c4cff;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.contato-introducao p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.contatos {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contatos h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color:#6c4cff;
+}
+
+.card-contato {
+    background: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+
+    text-align: left;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-contato h3 {
+    color: #6c4cff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card-contato p {
+    color: #64748b;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card-contato a {
+    color: #6c4cff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-contato a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+
+    nav button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    main {
+        padding: 60px 20px;
+    }
+
+    main h1 {
+        font-size: 40px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    .cards-problemas {
+        grid-template-columns: 1fr;
+    }
+
+    .desafios h2 {
+        font-size: 30px;
+    }
+
+    .solucao h2 {
+        font-size: 32px;
+    }
+
+    .titulo-principal {
+        font-size: 32px;
+    }
+
+    .titulo-servico {
+        font-size: 32px;
+    }
+
+    .titulo-sobre {
+        font-size: 32px;
+    }
+
+    .frase-final {
+        font-size: 22px;
+    }
+
+    .etapas li {
+        padding: 20px;
+    }
+
+    .card-servico {
+        padding: 20px;
+    }
+
+    .missao {
+        padding: 25px;
+    }
+}
